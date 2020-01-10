@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*色彩部分
+www.color-hex.com/color-names.html
+*/
+/* functional variables */
+/* 隱藏文字 */
+/* media-query mixin */
+/* 相片路徑和寬高mixin */
+/*  overlay mixin */
+/*  css:寫法
+.modal-background{
+  @include overlay();
+  background: black;
+  opacity: 0.9;
+
+} */
+ /* # for css 套用時 
+@include range-width(0, 500px){
+  width: calc(100% / 6);
+}
+*/
+#body-wrapper {
+  display: block;
+}
+
+#main {
+  max-width: 100%;
+}
+
+#body-content {
+  margin: 10px -15px;
+}
+
+#sidenav {
+  width: 20%;
+  height: 300px;
+  float: left;
+  border: 1px solid #eee;
+}
+#sidenav ul {
+  padding: 15px;
+}
+#sidenav li {
+  text-align: left;
+  padding: 6px 0;
+}
+
+.top-contents {
+  display: inline-block;
+}
+
+.top-contents-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.nick-top-panel {
+  display: inline-block;
+  width: 100%;
+  height: 300px;
+  background-color: pink;
+}
+.nick-top-panel .banner {
+  padding: 4px;
+  border: 1px solid #978465;
+  margin-bottom: 30px;
+}
+.nick-top-panel .banner span {
+  display: block;
+  padding: 32px 0;
+  border: 1px solid #978465;
+  font-size: 24px;
+  font-family: "Times New Roman", Times serif;
+  color: #978464;
+}
+
+.section-area {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 576px -1px) {
+  #sidenav {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #sidenav {
+    width: 200px;
+    padding-right: 30px;
+  }
+
+  .nick-top-panel {
+    float: left;
+    width: calc(100% - 200px -30px);
+    height: 300px;
+    background-color: yellow;
+  }
+}
+
+/*# sourceMappingURL=nicklace.css.map */
